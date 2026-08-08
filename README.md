@@ -148,3 +148,4 @@ Do **not** delete or overwrite the existing project configuration unless you und
 When practicing, create your own components and modify the existing code.
 
 Happy coding! 🚀
+# frontend
