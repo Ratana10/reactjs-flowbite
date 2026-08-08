@@ -1,76 +1,150 @@
-# React + TypeScript + Vite
+# ReactJS + TypeScript + Vite + Tailwind CSS + Flowbite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is used for learning **ReactJS** with **TypeScript**, **Tailwind CSS**, and **Flowbite**.
 
-Currently, two official plugins are available:
+If you missed a class, follow the instructions below to set up the project and continue practicing.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 1. Requirements
 
-## React Compiler
+Before starting, make sure you have installed:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* [Node.js](https://nodejs.org/) (LTS version recommended)
+* Git
+* VS Code or another code editor
 
-## Expanding the ESLint configuration
+Check your Node.js and npm versions:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+node -v
+npm -v
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 2. Clone the Project
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Clone the repository to your computer:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+git clone <YOUR_REPOSITORY_URL>
 ```
-# reactjs-flowbite
+
+Go into the project folder:
+
+```bash
+cd reactjs-flowbite
+```
+
+## 3. Install Dependencies
+
+Install all required packages:
+
+```bash
+npm install
+```
+
+## 4. Start the Development Server
+
+Run the project:
+
+```bash
+npm run dev
+```
+
+You should see something similar to:
+
+```text
+Local: http://localhost:5173/
+```
+
+Open the URL in your browser.
+
+## 5. Project Technologies
+
+This project uses:
+
+* **ReactJS** – Build user interfaces
+* **TypeScript** – Add type safety
+* **Vite** – Development and build tool
+* **Tailwind CSS** – Styling
+* **Flowbite** – UI components
+
+## 6. Useful Commands
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Build the project:
+
+```bash
+npm run build
+```
+
+Preview the production build:
+
+```bash
+npm run preview
+```
+
+Run ESLint:
+
+```bash
+npm run lint
+```
+
+## 7. Recommended Project Structure
+
+You will mainly work inside the `src` folder:
+
+```text
+src/
+├── assets/
+├── components/
+├── pages/
+├── App.tsx
+├── main.tsx
+└── index.css
+```
+
+### Components
+
+Reusable React components should be placed inside:
+
+```text
+src/components/
+```
+
+For example:
+
+```text
+src/components/
+├── Navbar.tsx
+├── Footer.tsx
+└── CourseCard.tsx
+```
+
+## 8. Catch Up With the Class
+
+If you missed a class:
+
+1. Pull the latest code from the repository.
+2. Run `npm install` if dependencies have changed.
+3. Run `npm run dev`.
+4. Check the code that was covered in the previous class.
+5. Practice by modifying or adding your own components.
+6. Ask the instructor if you have any problems.
+
+To get the latest changes:
+
+```bash
+git pull
+```
+
+## 9. Important
+
+Do **not** delete or overwrite the existing project configuration unless you understand what you are changing.
+
+When practicing, create your own components and modify the existing code.
+
+Happy coding! 🚀
