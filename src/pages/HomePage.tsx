@@ -1,9 +1,18 @@
-import React from 'react'
+import React from "react";
+import Hero from "../components/Hero";
+import PopularCourse from "../components/PopularCourse";
+import CourseCategory from "../components/CourseCategory";
+import SocialMedia from "../components/SocialMedia";
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
-  )
-}
+    <div>
+      <Hero />
+      <PopularCourse />
+      <CourseCategory />
+      <SocialMedia />
+    </div>
+  );
+};
 
-export default HomePage
+export default HomePage;
