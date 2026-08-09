@@ -1,8 +1,10 @@
-import React from 'react'
+import CourseListing from '../components/CourseListing'
 
 const CoursePage = () => {
   return (
-    <div>CoursePage</div>
+    <div>
+      <CourseListing />
+    </div>
   )
 }
 
